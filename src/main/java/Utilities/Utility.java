@@ -176,4 +176,9 @@ public class Utility {
             driver.manage().addCookie(cookie);
         }
     }
+
+    //TODO: Upload a file using the input element (type="file")
+    public static void uploadingFile(WebDriver driver, By locator, String path) {
+        driver.findElement(locator).sendKeys(path);  //tagName --> input & type --> file
+    }
 }
