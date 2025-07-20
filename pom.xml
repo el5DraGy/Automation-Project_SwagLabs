@@ -22,6 +22,7 @@
         <allureVersion>2.29.1</allureVersion>
         <shutterBugVersion>1.6</shutterBugVersion>
         <aspectj.version>1.9.22</aspectj.version>
+        <allure-commandlineVersion>2.34.1</allure-commandlineVersion>
     </properties>
 
     <dependencies>
