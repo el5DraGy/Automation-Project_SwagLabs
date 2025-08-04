@@ -34,4 +34,21 @@ public class P01_LoginPage {
         return driver.getCurrentUrl().equals(expectedValue);
     }
 
+    //TODO: Add a method to check if the error message is displayed
+    public boolean isErrorDisplayed() {
+        try {
+            return driver.findElement(errorMessage).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    //TODO: Add a method to get the error message text
+    public String getErrorMessage() {
+        try {
+            return driver.findElement(errorMessage).getText();
+        } catch (Exception e) {
+            return "";
+        }
+    }
 }
